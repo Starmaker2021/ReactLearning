@@ -15,23 +15,20 @@
 
 
  <script type = "text/babel">
-//创建虚拟DOM
-const data = ['Angular','React','Vue']
-const VDOM = (
-<div>
-    <h1>前端Js框架</h1>
-    <ul>
-        {
-            data.map((item,index)=>{
-                return <li key={index}>{item}</li>
-            })
-        }
-    </ul>
-    </div>    
-
-)
-//渲染虚拟DOM到页面
-ReactDOM.render(VDOM,document.getElementById('test'))
+function Demo (){
+    return <h1>hello_react</h1>
+}
+ReactDOM.render(<Demo/>,document.getElementById('test'))
  </script>    
+
+ <script>
+    class Person{
+     constructor(name,age){
+    this.name = name
+    this.age = age
+    }
+    const p = new Person('Tom','18')
+    console.log(p)
+ </script>
  </body>
  </html>
