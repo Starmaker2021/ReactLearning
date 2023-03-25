@@ -1,0 +1,26 @@
+<!DOCTYE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>hello_react</title>
+    </head>
+    <body>
+        <div id="test"></div>
+<!-- 引入React核心库 -->
+ <script type="text/javascript" src="../js/react.development.js"></script>
+<!-- 引入react-Dom -->
+ <script type="text/javascript" src="../js/react-dom.development.js"></script>
+<!-- 引入babel -->
+ <script type="text/javascript" src="../js/babel.min.js"></script>
+
+
+ <script type = "text/babel">
+class MyComponent extends React.Component{
+    render(){
+        return <h1>hello_react</h1>
+    }
+}//渲染组件到页面
+ReactDOM.render(<MyComponent/>,document.getElementById('test'))
+ </script>    
+ </body>
+ </html>
